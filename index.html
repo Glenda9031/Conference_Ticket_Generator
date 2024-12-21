@@ -8,26 +8,48 @@
   <title>Frontend Mentor | Conference ticket generator</title>
   </head>
 <body>
+  <div class="container">
+    <header>
+      <img src="./assets/images/logo-mark.svg" alt="logo">
+      <p>Coding Conf</p>
+    </header>
 
-  <!-- Form starts -->
+    <main>
+      <div class="conference__header">
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+      </div>
 
-  Your Journey to Coding Conf 2025 Starts Here!
+      <div class="conference__cta">
+        <div class="conference__cta--avatar">
+          <p>Upload Avatar</p>
+        </div>
+        <div class="conference__cta--avatar-box">
+          <img src="./assets/images/logo-full.svg" alt="logo">
+          <p>Drag and drop or click to upload</p>
+        </div>
+        <div class="conference__cta--avatar-copyright">
+          <p>&copy Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
+      </div>
 
-  Secure your spot at next year's biggest coding conference.
+      <div class="conference__cta--form">
+        <form action="submit" method="post">
+          <label for="name">Full Name</label><br>
+          <input type="text" id="name" name="name" minlength="10" required><br>
+          <label for="email">Email Address</label><br>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+          <label for="githubname">GitHub Username</label><br>
+          <input type="text" id="githubname" name="githubname" placeholder="@yourusername" required><br>
+          <button type="submit" class="btn" id="btn">Generate Ticket</button>
+        </form>
+      </div>
+    </main>
+  </div>
+    
+  
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
-
-  Full Name
-
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
+  
 
   <!-- Form ends -->
 
