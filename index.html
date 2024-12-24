@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Conference ticket generator</title>
   </head>
 <body>
-  <div class="container">
+  <div id="container">
     <header>
-      <img src="./assets/images/logo-mark.svg" alt="logo">
+      <img src="./assets/images/logo-mark.svg" alt="logo" id="logo">
       <p>Coding Conf</p>
     </header>
 
@@ -21,20 +22,20 @@
       </div>
 
       <div class="conference__cta">
-        <div class="conference__cta--avatar">
+        <div class="conference__cta--avatar" id="conference__cta--avatar">
           <p>Upload Avatar</p>
         </div>
         <div class="conference__cta--avatar-box">
-          <img src="./assets/images/logo-full.svg" alt="logo">
+          <img src="./assets/images/logo-full.svg" alt="logo" id="conference__cta--avatar-box">
           <p>Drag and drop or click to upload</p>
         </div>
-        <div class="conference__cta--avatar-copyright">
+        <div class="conference__cta--avatar-copyright" id="conference__cta--avatar-copyright">
           <p>&copy Upload your photo (JPG or PNG, max size: 500KB).</p>
         </div>
       </div>
 
       <div class="conference__cta--form">
-        <form action="submit" method="post">
+        <form action="userInput.html" method="get">
           <label for="name">Full Name</label><br>
           <input type="text" id="name" name="name" minlength="10" required><br>
           <label for="email">Email Address</label><br>

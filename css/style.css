@@ -23,17 +23,66 @@
 
 body {
     font-family: 'Inconsolata', monospace, sans-serif;
-    font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.25rem 0 0;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../assets/images/pattern-lines.svg')
+                      url('../assets/images/pattern-squiggly-line-top.svg')
+                      url('../assets/images/pattern-squiggly-line-bottom.svg')
+                      url('../assets/images/pattern-circle.svg')
+                      url('../assets/images/pattern-circle.svg')
+                      url('../assets/images/background-desktop.png');
+    background-repeat: no-repeat;
+    background-position: top center, bottom left, top right, 69%, 65%, 12.5rem, -10%;
+    background-size: cover, auto, 18.75rem, 9.375rem, 9.375rem, cover;
     line-height: 1.5;
     background-color: var(--neutral-900);
-    color: var(--neutral-0);
-    place-items: center;
+    color: var(--neutral-300);
 }
 
-.container {
-    max-width: 1200px;
-    padding: 0 1rem;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+header p {
+    padding-left: 0.75rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 1.25rem);
+    margin: 0 .625rem;
+}
+
+form {
+    width: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
 
 
 
