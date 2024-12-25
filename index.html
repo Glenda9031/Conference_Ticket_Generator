@@ -28,29 +28,25 @@
         <div class="conference__cta--avatar-box">
           <img src="./assets/images/logo-full.svg" alt="logo" id="conference__cta--avatar-box">
           <p>Drag and drop or click to upload</p>
+          <button id="remove-btn" class="remove-btn">Remove image</button>
+          <button id="change-btn" class="change-btn">Change image</button>
         </div>
         <div class="conference__cta--avatar-copyright" id="conference__cta--avatar-copyright">
-          <p>&copy Upload your photo (JPG or PNG, max size: 500KB).</p>
+          <i class="fa solid fa-circle-info"></i>
+          <p class="alert-info" id="alert-info">&copy Upload your photo (JPG or PNG, max size: 500KB).</p>
         </div>
       </div>
 
       <div class="conference__cta--form">
         <form action="userInput.html" method="get">
-          <label for="name">Full Name</label><br>
-          <input type="text" id="name" name="name" minlength="10" required><br>
-          <label for="email">Email Address</label><br>
-          <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
-          <label for="githubname">GitHub Username</label><br>
-          <input type="text" id="githubname" name="githubname" placeholder="@yourusername" required><br>
+          <label for="name">Full Name<br><input type="text" id="fullName" name="fullName" minlength="10" placeholder="Joy Smith" required></label>
+          <label for="email">Email Address<br>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            <p id="errorEmail" class="errorEmail" hidden>Please enter a valid email address</p><br>
+            <label for="githubname">GitHub Username<br><input type="text" id="githubname" name="githubname" placeholder="@yourusername" required></label>
+          <br><br>
           <button type="submit" class="btn" id="btn">Generate Ticket</button>
         </form>
-      </div>
-      <div id="userInput">
-        <h5>Congrats, ! Your ticket is ready.<br>
-          We've emailed your ticket to and will send updates in the run up to the event.<br>
-          Coding Conf
-          Jan 31, 2025 / Austin, TX
-        </h5>
       </div>
     </main>
   </div>
