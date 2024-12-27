@@ -8,21 +8,36 @@
   <title>Frontend Mentor | Conference ticket generator</title>
   </head>
 <body>
-  <div class="container__userInput">
     <main>
-      <div id="userInput">
+      <div id="userInput__container">
         <div id="userInput__logo">
           <img src="./assets/images/logo-full.svg" alt="logo" id="logo">
         </div>
 
         <div class="userInput__content">
-          
+          <h1 id="userInput__name">Congrats, ! Your ticket is ready.</h1>
+          <p id="userInput__email">We've emailed your ticket to and will send updates in the run up to the event.</p>
+
+          <div class="userInput">
+            <img src="./assets/images/logo-full.svg" alt="logo" id="userInput__logo">
+            <img src="./assets/images/pattern-ticket.svg" alt="ticket" id="userInput__image--ticket">
+            <p id="userInput__ticket--date">Jan 31, 2025 / Austin, TX</p>
+
+            <div id="userInput__ticket--info">
+            <img src="./assets/images/image-avatar.jpg" alt="avatar" id="userInput__ticket--image">
+
+            <div id="userInput__github--container">
+              <h4 id="userInput__profile"></h4>
+              <div id="userInput__github--profile">
+                <img src="./assets/images/icon-github.svg" alt="github profile icon">
+                <p id="userInput__profile"></p>
+            </div>
+          </div>
         </div>
-        <h5>Congrats, ! Your ticket is ready.<br>
-          We've emailed your ticket to and will send updates in the run up to the event.<br>
-          Coding Conf
-          Jan 31, 2025 / Austin, TX
-        </h5>
+
+        <p id="userInput__ticket--number"></p>
+       </div>
+        </div>
       </div>
     </main>
   </div>
