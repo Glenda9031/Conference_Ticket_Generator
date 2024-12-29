@@ -39,14 +39,16 @@
             <p class="alert-message" id="alert-message">&copy Upload your photo (JPG or PNG, max size: 500KB).</p>
           </div>
         </div>
-      </div>
 
-      <label for="name">Full Name<br><input type="text" id="fullName" name="fullName" minlength="10" placeholder="Joy Smith" required></label>
+        <div>
+          <label for="name">Full Name<br>
+            <input type="text" id="fullName" name="fullName" minlength="10" placeholder="Joy Smith" required></label><br>
           <label for="email">Email Address<br>
             <input type="email" id="email" name="email" placeholder="example@email.com" required>
             <p id="errorEmail" class="errorEmail" hidden>Please enter a valid email address</p><br>
-            <label for="githubname">GitHub Username<br><input type="text" id="githubname" name="githubname" placeholder="@yourusername" required></label>
-          <br><br>
+          <label for="githubname">GitHub Username<br>
+            <input type="text" id="githubname" name="githubname" placeholder="@yourusername" required></label>
+            <br><br>
           <button type="submit" class="btn" id="btn">Generate Ticket</button>
         </form>
       </div>

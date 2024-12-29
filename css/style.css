@@ -54,6 +54,8 @@ header {
 
 header p {
     padding-left: 0.75rem;
+    font-size: 1.75rem;
+    font-weight: 700;
 }
 
 #container {
