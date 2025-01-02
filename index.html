@@ -9,51 +9,50 @@
   <title>Frontend Mentor | Conference ticket generator</title>
   </head>
 <body>
-  <div id="container">
-    <header>
-      <img src="./assets/images/logo-mark.svg" alt="logo" id="logo">
-      <p>Coding Conf</p>
-    </header>
-
-    <main>
-      <div class="conference__header">
-        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
-        <p>Secure your spot at next year's biggest coding conference.</p>
+  <main>
+    <section id="container-form">
+      <div id="logo-form">
+        <img src="./assets/images/logo-mark.svg" alt="logo">
       </div>
-
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
       <form action="userInput.html" method="get">
-        <div class="conference__cta">
-           <label for="avatar" id="conference__cta--avatar-upload">Upload Avatar</label>
-           <div id="conference__cta--input">
-            <img src="./assets/images/icon-upload.svg" alt="upload icon" id="upload-icon">
+        <div id="container-fl">
+           <label for="avatar" id="label-upload">Upload Avatar</label>
+           <div id="container-input-file">
+            <img src="./assets/images/icon-upload.svg" alt="upload icon" id="icon-upload">
             <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required>
-            <p id="avatar-placeholder">Drag and drop or click to upload</p>
-            <div id="conference__avatar--buttons">
-              <button id="remove-btn" class="remove-btn">Remove image</button>
-              <button id="change-btn" class="change-btn">Change image</button>
+            <p id="file-placeholder">Drag and drop or click to upload</p>
+            <div id="container-buttons">
+              <button id="remove-button" class="button-image">Remove image</button>
+              <button id="change-botton" class="button-image">Change image</button>
             </div>
            </div>
 
-           <div class="conference__cta--avatar-copyright" id="conference__cta--avatar-copyright">
+           <div id="file-information">
             <i class="fa solid fa-circle-info"></i>
-            <p class="alert-message" id="alert-message">&copy Upload your photo (JPG or PNG, max size: 500KB).</p>
+            <p class="alertMessage" id="message-info">&copy Upload your photo (JPG or PNG, max size: 500KB).</p>
           </div>
         </div>
 
         <div>
           <label for="name">Full Name<br>
             <input type="text" id="fullName" name="fullName" minlength="10" placeholder="Joy Smith" required></label><br>
+        </div>
+        <div>
           <label for="email">Email Address<br>
             <input type="email" id="email" name="email" placeholder="example@email.com" required>
             <p id="errorEmail" class="errorEmail" hidden>Please enter a valid email address</p><br>
+        </div>
+
+        <div>
           <label for="githubname">GitHub Username<br>
             <input type="text" id="githubname" name="githubname" placeholder="@yourusername" required></label>
             <br><br>
+        </div>
           <button type="submit" class="btn" id="btn">Generate Ticket</button>
         </form>
-      </div>
-    </main>
-  </div>
+    </section>
   <script src="script.js"></script>
 </body>
 </html>
