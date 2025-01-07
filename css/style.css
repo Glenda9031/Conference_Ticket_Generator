@@ -144,6 +144,49 @@ label {
     text-decoration: underline;
 }
 
+input[input="file"] {
+    display: none;
+}
+
+#file-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#container-input-file {
+    position: relative;
+    height: 7.1875rem;
+    border: .0625rem solid var(--neutral-500);
+    background-color: var(--neutral-700);
+    border-style: dashed;
+    border-radius: .625rem;
+    transition: background-color .3s ease;
+}
+
+#container-input-file:hover {
+    cursor: pointer;
+    background-color: var(--neutral-600);
+}
+
+#container-input-file:hover .button-image {
+    background-color: var(--neutral-900);
+}
+
+#icon-upload {
+    background-color: var(--neutral-900);
+    width: 3.125rem;
+    padding: .3125rem;
+    border-radius: .625rem;
+    border: .0625rem solid var(--neutral-500);
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 
 
