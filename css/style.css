@@ -186,11 +186,41 @@ input[input="file"] {
     transform: translate(-50%, -50%);
 }
 
+.alertMessage {
+    font-size: 0.75em;
+}
 
+#file-information i {
+    font-size: 0.9em;
+}
 
+h1 {
+    font-size: 2.4rem;
+    margin: .625rem 0 .3125rem;
+    color: var(--neutral-0);
+}
 
+input {
+    padding: .625rem;
+    border: .0625rem solid var(--neutral-500);
+    background-color: var(--neutral-700);
+    border-radius: .625rem;
+    color: var(--neutral-300);
+    font-family: inherit;
+    transition: background-color .3s ease;
+}
 
+input:hover {
+    background-color: var(--neutral-600);
+}
 
+input:focus {
+    border: .1875rem double var(--neutral-500);
+}
+
+input::placeholder {
+    color: var(--neutral-500);
+}
 
 
 
