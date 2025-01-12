@@ -222,6 +222,12 @@ input::placeholder {
     color: var(--neutral-500);
 }
 
+input:-webkit-autofill {
+    background-color: var(--neutral-700) !important;
+}
+
+
+
 
 
 
