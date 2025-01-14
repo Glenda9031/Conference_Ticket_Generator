@@ -226,6 +226,49 @@ input:-webkit-autofill {
     background-color: var(--neutral-700) !important;
 }
 
+input[type="submit"] {
+    background-color: var(--orange-500);
+    color: var(--neutral-900);
+    font-weight: 700;
+    padding: .625rem 0;
+    margin-top: .3125rem;
+    border: .0625rem solid var(--neutral-900);
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--orange-700);
+    border-style: inset;
+    border: none;
+    border-bottom: .1875rem solid var(--Gradient1);
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.errorInput {
+    border: .0625rem solid var(--orange-500);
+}
+
+.errorMessage {
+    color: var(--orange-500);
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+
+
 
 
 
