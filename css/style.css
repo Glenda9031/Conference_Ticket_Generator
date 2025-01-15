@@ -33,11 +33,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../assets/images/pattern-lines.svg')
-                      url('../assets/images/pattern-squiggly-line-top.svg')
-                      url('../assets/images/pattern-squiggly-line-bottom.svg')
-                      url('../assets/images/pattern-circle.svg')
-                      url('../assets/images/pattern-circle.svg')
+    background-image: url('../assets/images/pattern-lines.svg');
+                      url('../assets/images/pattern-squiggly-line-top.svg');
+                      url('../assets/images/pattern-squiggly-line-bottom.svg');
+                      url('../assets/images/pattern-circle.svg');
+                      url('../assets/images/pattern-circle.svg');
                       url('../assets/images/background-desktop.png');
     background-repeat: no-repeat;
     background-position: top center, bottom left, top right, 69%, 65%, 12.5rem, -10%;
@@ -258,19 +258,115 @@ input[type="submit"]:active {
     color: var(--orange-500);
 }
 
-a {
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 700;
+/* UserInput.html */
+#ticket-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#ticket-name {
+    margin: 1.875rem;
+}
 
+#ticket-email {
+    width: 50%;
+}
 
+#ticket {
+    position: relative;
+    top: .8125rem;
+    left: .8125rem;
+}
 
+#container-information-ticket {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    position: absolute;
+    width: 100%;
+    bottom: .9375rem;
+    left: .8125rem;
+}
+#ticket-image {
+    width: 100%;
+}
 
+#ticket-date {
+    position: absolute;
+    top: 2.8125rem;
+    left: 3.625rem;
+    font-size: 0.9em;
+}
 
+.gradient-text {
+    font-weight: 700;
+    background: linear-gradient(to right, var(--Gradient1), var(--Gradient2));
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+#image-profile {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: .4375rem;
+}
 
+#name-profile {
+    color: var(--neutral-0);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+#container-github {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: .3125rem;
+}
+
+#github-profile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .3125rem;
+}
+
+#user-github {
+    font-size: 0.8em;
+}
+
+#ticket-number {
+    color: var(--neutral-500);
+    font-size: 1.15em;
+    position: absolute;
+    top: 45%;
+    right: .625rem;
+    transform: rotate(90deg);
+}
+
+/* Media Queries */
+@media (max-width: 64rem) {
+    body {
+        padding: 1.5625rem 0 0;
+        background-image: url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/squiggly-line-bottom.svg');
+                          url('../assets/images/squiggly-line-top.svg');
+                          url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/background-tablet.png');
+        background-position: top center, bottom left, top right, 120% center, 1%, -10% center center;
+        background-size: cover, contain, 18.75rem, 9.375rem, 9.375rem, cover;
+        background-repeat: no-repeat;                  
+    }
+
+    
+}
 
 
