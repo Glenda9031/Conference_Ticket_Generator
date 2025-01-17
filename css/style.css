@@ -364,6 +364,51 @@ input[type="submit"]:active {
         background-position: top center, bottom left, top right, 120% center, 1%, -10% center center;
         background-size: cover, contain, 18.75rem, 9.375rem, 9.375rem, cover;
         background-repeat: no-repeat;                  
+    }       
+}
+
+@media (max-width: 31.25rem) {
+    body {
+        padding: 1.5625rem 0 0;
+        background-image: url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/squiggly-line-bottom.svg');
+                          url('../assets/images/squiggly-line-top.svg');
+                          url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/background-mobile.png');
+        background-position: top center, bottom left, top right, 120% center, 1%, -10% center center;
+        background-size: cover, contain, 18.75rem, 18.75rem, 18.75rem, cover;
+        background-repeat: no-repeat;                  
+    }
+    
+    main {
+        margin: 0 .9375rem;
+    }
+
+    #message-info {
+        font-size: 0.65em;
+    }
+}
+
+/* UserInput.html Media Queries */
+@media (max-width: 64rem) {
+    body {
+        padding: 1.5625rem 0 0;
+        background-image: url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/squiggly-line-bottom.svg');
+                          url('../assets/images/squiggly-line-top.svg');
+                          url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/pattern-circle.svg');
+                          url('../assets/images/background-tablet.png');
+        background-position: top center, bottom left, top right, 120% center, 1%, -10% center center;
+        background-size: cover, contain, 18.75rem, 18.75rem, 18.75rem, cover;
+        background-repeat: no-repeat;                  
+    }    
+}
+
+@media (max-width: 31.25rem) {
+    body {
+        padding-top: 1.5625rem;
     }
 
     
