@@ -411,7 +411,36 @@ input[type="submit"]:active {
         padding-top: 1.5625rem;
     }
 
-    
+    #ticket {
+        margin-top: 3.75rem;
+    }
+
+    #ticket-logo {
+        width: 9.375rem;
+    }
+
+    #ticket-name {
+        margin: 1.875rem .625rem;
+        font-size: 1.8em;
+    }
+
+    #ticket-email {
+        width: 90%;
+    }
+
+    #ticket-date {
+        top: 2.1875rem;
+        left: 2.9375rem;
+    }
+
+    #container-information-ticket {
+        width: 60%;
+    }
+
+    #image-profile {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
 }
 
 
