@@ -1,7 +1,7 @@
 const container = document.getElementById('container-input-file');
 const inputFile = document.getElementById('avatar');
 const iconUpload = document.getElementById('icon-upload');
-const divInfo = document.getElementById('file-infomation');
+const divInfo = document.getElementById('file-information');
 const submit = document.querySelector('input[type="submit"]');
 const containerButtons = document.getElementById('container-buttons');
 let fileIsValid = false;
@@ -35,14 +35,29 @@ function updateUIBasedOnFile() {
     }
 }
 
-container.addEventListener('click'() => inputFile.click());
+container.addEventListener('click', () => inputFile.click());
 
 container.addEventListener('dragover', (event) => {
     event.preventDefault();
     container.classList.add('dragover');
 });
 
+container.addEventListener('dragleave', () => {
+    container.classList.remove('dragover');
+});
 
+container.addEventListener('drop', (event) => {
+    event.preventDefault();
+    container.classList.remove('dragover');
+
+    const transfer = event.dataTransfer;
+        if (FileSystem.length > 0) {
+            const file = files[0];
+            handleFile(file);
+            updateUIBasedOnFile();
+        }
+        
+});
 
 
 
