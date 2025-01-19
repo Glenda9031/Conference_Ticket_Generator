@@ -56,10 +56,42 @@ container.addEventListener('drop', (event) => {
             handleFile(file);
             updateUIBasedOnFile();
         }
-        
 });
 
+inputFile.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        handleFile(file);
+        updateUIBasedOnFile();
+    }
+});
 
+function handleFile() {
+    if (file.type.startsWith('image/')) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            iconUpload.style.display = 'none';
+
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.classList.add('preview');
+
+            const existingPreview = container.querySelector('img.preview');
+            if (existingPreview) {
+                existingPreview.remove();
+            }
+
+            container.appendChild(img);
+            fileIsValid = true;
+
+            divInfo.classList.remove('errorMessage');
+
+            localStorage.setItem('imageUrl', e.target.result);
+            updateUIBasedOnFile();
+        }
+    }
+}
 
 
 
