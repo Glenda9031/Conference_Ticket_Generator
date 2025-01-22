@@ -89,8 +89,26 @@ function handleFile() {
 
             localStorage.setItem('imageUrl', e.target.result);
             updateUIBasedOnFile();
-        }
+        };
+        reader.readAsDataURL(file);
+    } else {
+        fileIsValid = false;
+        alert("Please upload a valid image file");
     }
+}
+
+function removeImage() {
+    const existingPreview = container.querySelector('img.preview');
+    if (existingPreview) {
+        existingPreview.remove();
+    }
+    iconUpload.style.display = 'flex';
+
+    fileIsValid = false;
+
+    inputFile.value = '';
+    
+    
 }
 
 
