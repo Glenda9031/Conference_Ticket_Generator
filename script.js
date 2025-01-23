@@ -108,9 +108,53 @@ function removeImage() {
 
     inputFile.value = '';
     
-    
+    localStorage.removeItem("imageUrl");
 }
 
+const btnRemove = document.getElementById('remove-image');
+btnRemove.addEventListener('click', (event) => {
+    event.stopPropagation();
+    removeImage();
+    updateUIBasedOnFile();
+});
 
+function emailValidate(event) {
+    const inputEmail = document.getElementById('email');
+    const email = inputEmail.value.trim();
+    const errorEmail = document.getElementById('errorEmail');
+    let emailIsValid = true;
 
+    if (!email.includes('@') || !email.includes('.com')) {
+        inputEmail.classList.add('errorInput');
+        errorEmail.hidden = false;
+        errorEmail.classList.add('errorMessage');
+        emailIsValid = false;
+    } else {
+        inputEmail.classList.remove('errorInput');
+        errorEmail.hidden = true;
+        errorEmail.classList.remove('errorMessage');
+        emailIsValid = true;
+    }
+    if (!emailIsValid) {
+        event.preventDefault();
+    }
+}
 
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('fullName') || 'Guest';
+    const email = params.get('email') || 'No email provided';
+    return { name, email };
+}
+
+const ticketName = document.getElementById('ticket-name');
+const ticketEmail = document.getElementById('ticket-email');
+
+submit.addEventListener('click', function (event) {
+    emailValidate(event);
+
+    if (!fileIsValid) {
+        divInfo.classList.add("errorMessage");
+        event.preventDefault();
+    }
+});
