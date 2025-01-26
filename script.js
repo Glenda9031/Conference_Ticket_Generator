@@ -158,3 +158,42 @@ submit.addEventListener('click', function (event) {
         event.preventDefault();
     }
 });
+
+/* userInput Section */
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('fullName') || 'Guest';
+    const email = params.get('email') || 'No email provided';
+    const userGithub = params.get('github') || 'No github provided';
+    return { name, email, userGithub };
+
+    const ticketName = document.getElementById('ticket-name');
+    const ticketEmail = document.getElementById('ticket-email');
+    const ticketGithub = document.getElementById('user-profile');
+    const nameProfile = document.getElementById('name-profile');
+
+    if (ticketName && ticketEmail) {
+        const { name, email, userGithub } = getQueryParams();
+        ticketName.innerHTML = `Congrats, <span class="gradient-text">${name}</span><br> Your ticket is ready`;
+        ticketEmail.innerHTML = `We emailed your ticket to: <span class="gradient-text">${email}</span> and will send updates in the run up to the event`;
+
+        nameProfile.textContent = `${name}`;
+
+        if (userGithub.includes(@)) {
+            userGithub.textContent = `${userGithub}`;
+        } else {
+            userGithub.textContent = `@${userGithub}`;
+        }
+    }
+
+    const imageUrl = localStorage.getItem('imageUrl');
+
+    if (imageUrl) {
+        const img = document.getElementById('image-profile');
+        img.src = imageUrl;
+        img.classList.add('preview');
+    }
+
+    const ticketNumber = document.getElementById('ticket-number');
+    
+}
